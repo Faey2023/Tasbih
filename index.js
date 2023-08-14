@@ -3,8 +3,8 @@ const subhanAllahDisplay = document.getElementById("subhanAllahDisplay");
 const sIncrement = document.getElementById("s-increment");
 const sDecrement = document.getElementById("s-decrement");
 sIncrement.addEventListener("click", function () {
-  if (sInitialValue >= 33) {
-    return alert("Alhamdulillah! You're done with your tasbih.");
+  if (sInitialValue == 33) {
+    return alert("Alhamdulillah! You're done with your Tasbih.");
   }
   sInitialValue += 1;
   subhanAllahDisplay.innerText = sInitialValue;
@@ -22,8 +22,8 @@ const AlhamdulillahDisplay = document.getElementById("AlhamdulillahDisplay");
 const aIncrement = document.getElementById("a-increment");
 const aDecrement = document.getElementById("a-decrement");
 aIncrement.addEventListener("click", function () {
-  if (aInitialValue >= 33) {
-    return alert("Alhamdulillah! You're done with your tasbih.");
+  if (aInitialValue == 33) {
+    return alert("Alhamdulillah! You're done with your Tasbih.");
   }
   aInitialValue += 1;
   AlhamdulillahDisplay.innerText = aInitialValue;
@@ -41,8 +41,8 @@ const AllahuakbarDisplay = document.getElementById("AllahuakbarDisplay");
 const akIncrement = document.getElementById("ak-increment");
 const akDecrement = document.getElementById("ak-decrement");
 akIncrement.addEventListener("click", function () {
-  if (akInitialValue >= 33) {
-    return alert("Alhamdulillah! You're done with your tasbih.");
+  if (akInitialValue == 33) {
+    return alert("Alhamdulillah! You're done with your Tasbih.");
   }
   akInitialValue += 1;
   AllahuakbarDisplay.innerText = akInitialValue;
@@ -57,6 +57,14 @@ akDecrement.addEventListener("click", function () {
 
 //reset button
 const buttonReset = document.getElementById("btn-reset");
+buttonReset.addEventListener("click", function () {
+  subhanAllahDisplay.innerText = 0;
+  AlhamdulillahDisplay.innerText = 0;
+  AllahuakbarDisplay.innerText = 0;
+  sInitialValue = 0;
+  aInitialValue = 0;
+  akInitialValue = 0;
+});
 //=========
 let sInitialValue = 0;
 let aInitialValue = 0;
