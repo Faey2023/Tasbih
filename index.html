@@ -18,7 +18,9 @@
   </head>
   <body class="container mx-auto grotesque">
     <header class="my-10 text-center">
-      <h1 class="text-7xl font-bold text-[#33030d]">Digital Tasbih</h1>
+      <h1 class="text-6xl font-bold text-[#33030d] lg:text-8xl">
+        Digital Tasbih
+      </h1>
     </header>
     <main class="my-5">
       <!-- main div s -->
@@ -30,11 +32,13 @@
           <h3 class="text-5xl my-5">Subhan Allah</h3>
           <p id="subhanAllahDisplay" class="text-5xl font-normal my-10">0</p>
           <button
+            id="s-increment"
             class="py-2 px-4 bg-[#5a082d] text-white font-semibold rounded-lg mb-5"
           >
             Increment
           </button>
           <button
+            id="s-decrement"
             class="py-2 px-4 bg-[#9d0b28] text-white font-semibold rounded-lg"
           >
             Decrement
@@ -47,11 +51,13 @@
           <h3 class="text-5xl my-5">Alhamdulillah</h3>
           <p id="AlhamdulillahDisplay" class="text-5xl font-normal my-10">0</p>
           <button
+            id="a-increment"
             class="py-2 px-4 bg-[#5a082d] text-white font-semibold rounded-lg mb-5"
           >
             Increment
           </button>
           <button
+            id="a-decrement"
             class="py-2 px-4 bg-[#9d0b28] text-white font-semibold rounded-lg"
           >
             Decrement
@@ -64,11 +70,13 @@
           <h3 class="text-5xl my-5">Allahu Akbar</h3>
           <p id="AllahuakbarDisplay" class="text-5xl font-normal my-10">0</p>
           <button
+            id="ak-increment"
             class="py-2 px-4 bg-[#5a082d] text-white font-semibold rounded-lg mb-5"
           >
             Increment
           </button>
           <button
+            id="ak-decrement"
             class="py-2 px-4 bg-[#9d0b28] text-white font-semibold rounded-lg"
           >
             Decrement
@@ -78,7 +86,7 @@
       <!-- Reset button  -->
       <div class="text-center">
         <button
-          id="btn"
+          id="btn-reset"
           class="py-2 px-4 bg-[#ff004d] text-[#fff] font-semibold rounded-lg"
         >
           Reset all tasbih
