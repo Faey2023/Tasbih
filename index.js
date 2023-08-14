@@ -41,7 +41,7 @@ const AllahuakbarDisplay = document.getElementById("AllahuakbarDisplay");
 const akIncrement = document.getElementById("ak-increment");
 const akDecrement = document.getElementById("ak-decrement");
 akIncrement.addEventListener("click", function () {
-  if (akInitialValue == 33) {
+  if (akInitialValue == 34) {
     return alert("Alhamdulillah! You're done with your Tasbih.");
   }
   akInitialValue += 1;
